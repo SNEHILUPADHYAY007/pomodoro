@@ -1,0 +1,25 @@
+/* @media only screen and(max-width:480px){
+    .row{
+        width:100%;
+        padding:0 5%;
+    }
+}
+
+@media only screen and(max-width:767px){
+    .pomo-timer{
+        width:100%;
+        align-content: center;
+    }
+}
+
+@media only screen and(max-width:1023px){
+
+}
+
+@media only screen and(max-width:1200px){
+    .timer svg{
+        top:50%;
+    }
+
+
+} */

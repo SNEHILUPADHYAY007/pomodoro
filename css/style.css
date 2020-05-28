@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+*:focus{
+    outline: red;
+}
+
+.row{
+    max-width: 1120px;
+    margin:0 auto;
+}
+
+/* main-container */
+.app{
+    height:100vh;
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+/* targeting svg image */
+.timer h3{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.timer svg{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:20%;
+}
+
+
+
+
+/* icons-box */
+.setup-buttons{
+    position: absolute;
+    width:20%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    top:70%;
+    left:50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.emoji{
+    display: none;
+}
+.emoji2{
+    display: none;
+}
+
+/* icons */
+.btn-icon{
+    font-size:45px;
+    
+}
+.btn-icon:active{
+    color:rgba(0, 0, 0, 0.363);
+}
+
+video {
+    
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    min-width: 100%;
+    min-height:100%;
+    z-index: -10;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content{
+    position: absolute;
+    display:none;
+    min-width:100px;
+    padding:5px;
+    background:none;
+    background-color:lightgray;
+    
+}
+
+.dropdown-content button{
+    display:block;
+    width:100%;
+    padding:4px;
+    background:none;
+    margin-bottom: 2px;
+}
+
+.dd1ViewBy option{
+    background:none;
+}
+
+.dropdown:hover  .dropdown-content{
+    display: block;
+}
+
+/* all heading tags */
+h2{
+    text-align: center;
+    text-transform: capitalize;
+    color:#fff;
+    letter-spacing:2px;
+    padding:18px;
+}
+
+@media screen and(max-width:1023px){
+    .timer svg{
+        margin-top: 40px;
+    }
+}
+
+
+  

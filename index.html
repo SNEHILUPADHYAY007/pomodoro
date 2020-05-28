@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Girassol|Kulim+Park:400,400i&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/query.css">
+    <link rel="stylesheet" href="./css/query.css">
+    <title>Pomodoro</title>
+    
+    <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet" defer>
+</head>
+<body>
+    <h2 class="row">A simple pomodoro clock that will help u concentrate better</h2>
+        
+    <div class="app">
+        <i class="emoji">&#x1F605</i>
+        <i class="emoji2">&#x23F0</i>
+        <div class="video-container">
+            <video loop>
+                <source src="./video/beach.mp4" type="video/mp4"></source>
+            </video>
+        </div>
+
+        <div class="timer">
+            
+            <svg class="track-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="white" stroke-width="20"/>
+            </svg>
+            <svg class="moving-outline" width="453" height="453" viewBox="0 0 453 453" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="226.5" cy="226.5" r="216.5" stroke="#018EBA" stroke-width="20"/>
+            </svg>
+
+            <h3 class="showing-time">0:00</h3>
+            
+
+        </div>
+        <div class="setup-buttons">
+            <ion-icon name="play-outline" class="btn-icon play"></ion-icon>
+            <ion-icon name="pause-circle-outline" class="btn-icon pause"></ion-icon>
+            <span class="dropdown">
+                <ion-icon name="settings-outline" class="btn-icon setting"></ion-icon>
+                <div class="dropdown-content">
+                    <button data-time="600">10min</button>
+                    <button data-time="1200">20min</button>
+                    <button data-time="1800">30min</button>
+                    <button data-time="2400">40min</button>
+                    <button data-time="3000">50min</button>
+                </div>
+                
+            </span>
+            
+            
+        </div>
+        
+    </div>
+   
+    
+    
+    
+        
+    
+    <script src="./js/script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    
+</body>
+</html>
