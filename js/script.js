@@ -14,7 +14,9 @@ var UIController=(function(){
                 timeDisplay:document.querySelector('.showing-time'),
                 icon:document.querySelector('.emoji'),
                 icon2:document.querySelector('.emoji2'),
-                drop:document.querySelectorAll('.dropdown-content button')
+                drop:document.querySelectorAll('.dropdown-content button'),
+                outline:document.querySelector('.moving-outline circle')
+
             }
         }
     }
@@ -27,7 +29,10 @@ var centerController=(function(UICtrl){
     var countdown;
     //getting all the Dom elements.
     var DOM=UICtrl.getInput();
-
+    var outlineLength = DOM.outline.getTotalLength();
+    DOM.outline.style.strokeDashoffset = outlineLength;
+    DOM.outline.style.strokeDasharray = outlineLength;
+    
     //getting time input.
     var duration;
     var check=DOM.drop;
@@ -35,7 +40,7 @@ var centerController=(function(UICtrl){
     check.forEach(option=>{
         option.addEventListener('click',function(){
             duration=this.getAttribute("data-time");
-            DOM.timeDisplay.textContent=`${Math.floor(duration/60)}:${Math.floor(duration%60)<10?'0':''}${Math.floor(duration%60)}`;
+            DOM.timeDisplay.textContent=`${Math.floor(duration/60)}:  ${Math.floor(duration%60)<10?'0':''}${Math.floor(duration%60)}`;
             DOM.video.play();
             timer(duration);
         })
@@ -128,9 +133,12 @@ var centerController=(function(UICtrl){
     function displayTime(seconds){
         var minutes=Math.floor(seconds/60);
         var remainderSecond=(seconds%60);
-        const display=`${minutes}:${remainderSecond<10?'0':''}${remainderSecond}`;
+        const display=`${minutes}:  ${remainderSecond<10?'0':''}${remainderSecond}`;
         DOM.timeDisplay.textContent=display;
-        document.title=`${DOM.icon2.innerText='⏰'}${display}`;
+        document.title=`${DOM.icon2.innerText='⏰'}  ${display}`;
+        var progress = outlineLength - (seconds / duration) * outlineLength;
+        DOM.outline.style.strokeDashoffset = progress;
+
         
 
     }
@@ -142,7 +150,7 @@ var centerController=(function(UICtrl){
     return{
         init:function(){
             
-            DOM.timeDisplay.textContent=`${0}:${0}${0}`;
+            DOM.timeDisplay.textContent=`${0}:  ${0}${0}`;
             
         }
     }

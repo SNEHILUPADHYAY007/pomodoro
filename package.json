@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "lite-server": "^2.5.4"
+  },
+  "dependencies": {
+    "bcrypt": "^4.0.1"
   }
 }

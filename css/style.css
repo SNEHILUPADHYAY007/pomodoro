@@ -20,6 +20,7 @@
     display:flex;
     justify-content: center;
     align-items:center;
+    font-family:'Girassol',sans-serif;
     
 }
 
@@ -29,6 +30,8 @@
     top:40%;
     left:50%;
     transform: translate(-50%,-50%);
+    color:#fff;
+    font-size:25px;
     
 }
 
@@ -46,7 +49,7 @@
 /* icons-box */
 .setup-buttons{
     position: absolute;
-    width:20%;
+    width:45%;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -79,7 +82,7 @@ video {
     top: 0%;
     left: 0%;
     min-width: 100%;
-    min-height:100%;
+    min-height: 100%;
     z-index: -10;
 }
 
@@ -123,11 +126,14 @@ h2{
     padding:18px;
 }
 
-@media screen and(max-width:1023px){
-    .timer svg{
-        margin-top: 40px;
-    }
+.timer svg {
+    transform: translate(-50%, -50%) rotate(-90deg);
+    pointer-events: none;
 }
+.player-container svg circle {
+    transition: all 0.2s ease-in-out;
+  }
+  
 
 
   
