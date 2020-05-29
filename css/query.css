@@ -95,12 +95,15 @@
         top:70%;
         left:54%;
     }
+    .link-1{
+        margin-left: 42%;
+    }
             
 }
 
 @media only screen and (max-width:360px){
     .link-1{
-        left:44%;
+        margin-left:42%;
     }
     .timer svg{
         top:50%;
