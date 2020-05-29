@@ -1,39 +1,117 @@
 @media only screen and (max-width:1400px){
     .timer svg{
-        margin-top:20px;
+        top:50%;
+        width:20%;
     }
     .setup-buttons{
-        margin-top: 55px;
+        top: 80%;
     }
 }
 
 
 @media only screen and (max-width:1200px){
     .timer svg{
-        margin-top: 20px;
+        top:60%;
+        width:20%;
     }
     .setup-buttons{
-        margin-top: 40px;
+        top:80%;
     }
-    h3{
-        margin-top:40px;
+    h2{
+        font-size: 18px;
+        padding:12px;
     }
-
+    .timer h3{
+        top:60%;
+    }
+    .setup-buttons{
+        top:100%;
+    }
 
 
 }
 
 @media only screen and (max-width:1023px){
     .timer svg{
-        margin-top: 20px;
+        top:55%;
+        width:20%;
+        left:51%;
+    }
+    .timer h3{
+        top:57%;
+        left:51%;
     }
     .setup-buttons{
-        margin-top: 40px;
+        top:80%;
+        left:51%;
+    }
+    h2{
+        font-size: 18px;
+        padding:18px;
+        text-align: center;
+    }
+    .link-1{
+        margin-left: 43.5%;
     }
 }
 
 @media only screen and (max-width:740px){
+    .timer svg{
+        top:60%;
+        width:30%;
+        left:52%;
+    }
+    .timer h3{
+        top:60%;
+        left:52%;
+    }
+    .setup-buttons{
+        top:85%;
+        left:52%;
+    }
     
+    
+            
+}
+
+@media only screen and (max-width:400px){
+    h2{
+        font-size: 16px;
+        text-align: center;
+    }
+    .link-1{
+        margin-left: 42%;
+    }
+    .timer svg{
+        top:50%;
+        width:35%;
+        left:54%;
+    }
+    .timer h3{
+        top:55%;
+        left:54%;
+    }
+    .setup-buttons{
+        top:70%;
+        left:54%;
+    }
+            
+}
+
+@media only screen and (max-width:360px){
+    .timer svg{
+        top:50%;
+        width:45%;
+        left:54%;
+    }
+    .timer h3{
+        top:50%;
+        left:54%;
+    }
+    .setup-buttons{
+        left:54%;
+    }
+            
 }
 
 
