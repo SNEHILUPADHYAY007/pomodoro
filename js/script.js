@@ -53,15 +53,18 @@ var centerController=(function(UICtrl){
     })
     function checkPlay(){
         //DOM.video.play();
-        //console.log(DOM.video.paused);
-        if(z){
+        console.log(z);
+        if(z){  
+            z=false;
             DOM.video.play();
             var duration_new=secondsLeft;
             timer(duration_new-(elapsedSeconds));
             
+            
         }
         else{
             var x=DOM.icon;            
+            
             alert(`Sorry to say but nothing is set so, first set some timer for u then play!${x.innerText="😅😅😅😅😅"}`);
         }
     }
