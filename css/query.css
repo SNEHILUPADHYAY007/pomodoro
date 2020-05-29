@@ -69,6 +69,9 @@
         top:85%;
         left:52%;
     }
+    .link-1{
+        margin-left: 40%;
+    }
     
     
             
@@ -80,7 +83,7 @@
         text-align: center;
     }
     .link-1{
-        margin-left: 42%;
+        margin-left: 40%;
     }
     .timer svg{
         top:50%;
@@ -95,15 +98,13 @@
         top:70%;
         left:54%;
     }
-    .link-1{
-        margin-left: 42%;
-    }
+    
             
 }
 
 @media only screen and (max-width:360px){
     .link-1{
-        margin-left:42%;
+        margin-left:40%;
     }
     .timer svg{
         top:50%;
