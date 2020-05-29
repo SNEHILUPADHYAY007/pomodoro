@@ -53,7 +53,7 @@ var centerController=(function(UICtrl){
     })
     function checkPlay(){
         //DOM.video.play();
-        console.log(DOM.video.paused);
+        //console.log(DOM.video.paused);
         if(z){
             DOM.video.play();
             var duration_new=secondsLeft;
